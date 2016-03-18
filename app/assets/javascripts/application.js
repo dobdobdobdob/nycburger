@@ -9,7 +9,7 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-*= require_self
-*= require boostrap
-*= require boostrap_theme
-*= require_tree .
+//= require_self
+//= require jquery
+//= require bootstrap-sprockets
+//= require_tree .
