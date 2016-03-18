@@ -2,12 +2,20 @@
 <html>
 <head>
   <title>Nycburger</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
-
+<%= link_to "Home", root_path %>
+<%= link_to "Manhattan", manhattan_path %>
+<%= link_to "Brooklyn", brooklyn_path %>
+<%= link_to "Queens", queens_path %>
+<%= link_to "The Bronx", the_bronx_path %>
+<%= link_to "Staten Island", staten_island_path %>
+<%= link_to "About", about_path %>
 <%= yield %>
 
 </body>

@@ -1,4 +1,24 @@
 Rails.application.routes.draw do
+
+  get 'pages/home'
+
+  get 'pages/about'
+  get "pages/manhattan"
+  get "pages/brooklyn"
+  get "pages/queens"
+  get "pages/the_bronx"
+  get "pages/staten_island"
+  
+    get "manhattan" => "pages#manhattan"
+    get "brooklyn" => "pages#brooklyn"
+    get "queens" => "pages#queens"
+    get "the_bronx" => "pages#the_bronx"
+    get "staten_island" => "pages#staten_island"
+    get "about" => "pages#about"
+
+  root "pages#home" 
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
